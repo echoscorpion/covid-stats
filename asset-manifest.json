@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/covid-stats/static/css/main.86f69091.css",
-    "main.js": "/covid-stats/static/js/main.3cb81e82.js",
+    "main.css": "/covid-stats/static/css/main.d4b4f5fa.css",
+    "main.js": "/covid-stats/static/js/main.251a0b23.js",
     "static/js/787.a763fe4f.chunk.js": "/covid-stats/static/js/787.a763fe4f.chunk.js",
     "static/media/covid-still-life-with-vaccine.jpg": "/covid-stats/static/media/covid-still-life-with-vaccine.69b70ea27d554ebe38e7.jpg",
     "index.html": "/covid-stats/index.html",
-    "main.86f69091.css.map": "/covid-stats/static/css/main.86f69091.css.map",
-    "main.3cb81e82.js.map": "/covid-stats/static/js/main.3cb81e82.js.map",
+    "main.d4b4f5fa.css.map": "/covid-stats/static/css/main.d4b4f5fa.css.map",
+    "main.251a0b23.js.map": "/covid-stats/static/js/main.251a0b23.js.map",
     "787.a763fe4f.chunk.js.map": "/covid-stats/static/js/787.a763fe4f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.86f69091.css",
-    "static/js/main.3cb81e82.js"
+    "static/css/main.d4b4f5fa.css",
+    "static/js/main.251a0b23.js"
   ]
 }
