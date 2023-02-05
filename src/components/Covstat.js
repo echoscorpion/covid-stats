@@ -29,14 +29,15 @@ export default function Covstat() {
 
     const slectedValueChanged = (event)=>{
         event.preventDefault();
+        let selectedState = document.getElementById("SelectState");
+        let selectedValue = selectedState.value;
+        setselectedValue(selectedValue)
        
     }
 
     const getSelectedData = async (event) =>{
         event.preventDefault();
-        let selectedState = document.getElementById("SelectState");
-        let selectedValue = selectedState.value;
-        setselectedValue(selectedValue)
+       
 
         for (let i=0; i<covidData.length; i++){
             if (covidData[i].loc === selectedValue){
@@ -63,7 +64,7 @@ export default function Covstat() {
     <>
         <div className="container p-md-5 pb-5">
             <div className="row">
-                <div className="col-md-6 col-12">
+                <div className="col-md-6 col-12 my-auto">
                     <div className="row">
                         <div className="col-12">
                         <h1 className="title pt-5 pt-md-0">
@@ -96,10 +97,10 @@ export default function Covstat() {
                     </div>
                 </div>
                 <div className="col-md-6 col-12 pt-5 pt-md-5 ps-md-5 my-auto">
-                    <h3 className='text-light ps-md-5 pb-3'>{selectedValue ? `Number of casses in ${selectedValue}` :""}</h3>
+                    <h3 className='text-light ps-md-5 pb-3'>{selectedValue ? `Number of casses in ${selectedValue}` :"Please select State"}</h3>
                     <div className="resultCard ps-md-5">
                         <div className="card">
-                            <div class="cardTttl">
+                            <div className="cardTttl">
                             Indian Confirmed Cases
                             </div>
                             <p className="result">
@@ -107,7 +108,7 @@ export default function Covstat() {
                             </p>
                         </div>
                         <div className="card">
-                            <div class="cardTttl">
+                            <div className="cardTttl">
                             Foreign Confirmed Cases
                             </div>
                             <p className="result">
@@ -115,7 +116,7 @@ export default function Covstat() {
                             </p>
                         </div>
                         <div className="card">
-                            <div class="cardTttl">
+                            <div className="cardTttl">
                             Discharged
                             </div>
                             <p className="result">
@@ -123,7 +124,7 @@ export default function Covstat() {
                             </p>
                         </div>
                         <div className="card">
-                            <div class="cardTttl">
+                            <div className="cardTttl">
                             Deaths
                             </div>
                             <p className="result">
@@ -131,7 +132,7 @@ export default function Covstat() {
                             </p>
                         </div>
                         <div className="card">
-                            <div class="cardTttl">
+                            <div className="cardTttl">
                             Total Confirmed
                             </div>
                             <p className="result">
